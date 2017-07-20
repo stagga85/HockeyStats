@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">ShotTracker</string>
+    <string name="title_first_section">First Section</string>
+
+    <string-array name="teams_array">
+        <item>UW - Oshkosh</item>
+        <item>UW - Madison</item>
+
+    </string-array>
+
+
+    <string-array name="shot_descriptors">
+        <item>Clean</item>
+        <item>Tip</item>
+        <item>Rebound</item>
+        <item>Translation</item>
+        <item>Screen</item>
+        <item>Breakaway</item>
+    </string-array>
+
+    <string-array name="play_type">
+        <item>Even Strength</item>
+        <item>Power Play</item>
+        <item>Short-Handed</item>
+        <item>Extra-Attacker</item>
+    </string-array>
+
+    <string-array name="shot_occurrence">
+        <item>1st Shot</item>
+        <item>Bad Rebound</item>
+    </string-array>
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

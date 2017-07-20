@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="2.5dp">
+
+    <android.support.v7.widget.CardView
+        card_view:cardUseCompatPadding="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp"
+        android:id="@+id/cv" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp" >
+
+            <ImageView
+                android:id="@+id/person_photo"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_name"
+                android:layout_toRightOf="@+id/person_photo"
+                android:text="Player Name"
+                android:layout_alignParentTop="true"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_team"
+                android:layout_toRightOf="@+id/person_photo"
+                android:text="Team"
+                android:layout_below="@+id/person_name" />
+
+            <TableLayout
+                android:id="@+id/player_season_stats"
+                android:layout_below="@id/person_team"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="15dp"
+                        android:text="Season Stats"
+                        android:layout_span="10" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:text="Season"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="Games"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="W"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="L"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="T"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="Min."
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="Saves"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="GA"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="GAA"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="Save %"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:id="@+id/season_example"
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:text="2017"
+                        android:id="@+id/season1"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                    <TextView
+                        android:text="-"
+                        android:textSize="10dp"
+                        android:textAlignment="center" />
+                </TableRow>
+
+            </TableLayout>
+
+            <View
+                android:layout_below="@+id/player_season_stats"
+                android:id="@+id/line"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:gravity="bottom"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentRight="true">
+
+                <Button
+                    android:id="@+id/edit_player_button"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="false"
+                    android:text="Edit"/>
+
+                <Button
+                    android:id="@+id/delete_player_button"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="false"
+                    android:text="Delete"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

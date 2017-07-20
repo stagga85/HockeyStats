@@ -1,0 +1,12 @@
+[user]
+	name = Andrew Stagg
+	email = stagga85@uwosh.edu
+[core]
+	editor = nano
+[color]
+	ui = auto
+[alias]
+	lg = log --graph --abbrev-commit --decorate --date=relative --all
+	lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate --date=relative --all
+
+

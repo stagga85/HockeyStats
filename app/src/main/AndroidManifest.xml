@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stats.shottracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.activeandroid.app.Application"
+        android:allowBackup="true"
+        android:icon="@drawable/puck"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.NewTeamActivity" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.SettingsActivity" />
+        <activity android:name=".activities.GameActivity" />
+        <activity android:name=".activities.NewPlayerActivity" />
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="Pickrand" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="6" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.stats.shottracker.Player, com.stats.shottracker.Team" />
+
+        <activity android:name=".activities.NewGameActivity" />
+        <activity android:name=".activities.GoalTrackingActivity" />
+        <activity android:name=".activities.GoalAttributesActivity"></activity>
+    </application>
+
+</manifest>
