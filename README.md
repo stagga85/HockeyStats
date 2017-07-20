@@ -1,23 +1,23 @@
-##GITLAB - DEV BRANCH
-
-All development goes on here.
-
-Things to do.
-- **Activities**
- - *Team (New/Edit)*
-   - This is basically a form that is used to input all of the specific
-     to each individual team that is entered in to the application. For now,
-     teams will only be visible to the creating APP_USER. Possibly in the
-     future there will be a list of teams that are added by developers that
-     application users can select from.
- - *Player (New/Edit)*
-   - Form for entering the information that is required to create a new
-     player in the database.
- - *Game (New/Edit)*
-
-
-## Ideas
-- Use node.js for RESTful API
-  - This seems like the best option for now.
-- OAuth2 to authenticate
 # hockeyStats
+
+## Things to do.
+ - *Goal categorizing screen:*
+   - Change from portrait to landscape view
+   - Change from drop downs to radial buttons
+   - Type should be multiple select
+   - Need to add time on clock
+ - *Ability to export/email .cvs file for data manipulation*
+ - *Finish game/player/team cards as in shared folder*
+ - *Be able to switch goalies during a period*
+   - Asks for time on clock to calculate minutes played behind the scenes
+ - *End game screen*
+   - Ask for time on clock if OT, otherwise shows 0:00
+   - Shows game stats for each goalie that played, by team
+   - Select winning and losing goalies
+
+## Wishes
+- Be able to swipe left/right for next/previous period (after period 3 asks for OT or Game Over)
+- Switching ends automatically happens upon period change
+- Change goal to a long press
+- Add double tap for a shot off rebound (saves = shots + shots off rebound)
+
